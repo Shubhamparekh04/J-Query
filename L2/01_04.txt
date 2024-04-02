@@ -1,0 +1,20 @@
+Mouse Events:
+
+1.click();
+2.dblclick();
+3.mouseenter()/hover;
+4.mouseleave();
+5.contextmenu()/right-click;
+
+--------------------------------------
+
+Keyboard Events:
+
+1. Keypress();
+2. Keydown(); (SHIFT-TAB-CAPS-NUM-CTRL-ESC-HOME-END-PGUP-PGDWN-FN KEYS-arrow keys)
+3. keyup();
+
+----------------------------------------
+
+1. Hide()/show():
+
