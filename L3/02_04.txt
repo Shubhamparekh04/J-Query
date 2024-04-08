@@ -1,0 +1,45 @@
+addClass:- older class will not removed new class will be applied
+
+
+- Add Class(), Remove Class(), Toggle Class(), CSS()
+- Slide, Fade
+Ex : Toggle Menu
+
+
+Form methods:
+
+1.focus()
+2.blur()
+3.change() : only to be use on select tag dropdown 
+<select>
+    <option></option>
+    <option></option>
+    <option></option>
+</select>
+4.select()
+5.submit() // check not working.
+
+
+window methods:
+
+1.scroll() // have to select window or div in order to invoke scroll event
+2.resize() // have to select $(window).on("resize", "function(){}"); 
+
+
+Get/Post methods:
+
+1.text()
+2.html()
+3.attr()
+4.val() - use with form tags
+
+
+class methods:
+
+1.addClass()
+2.removeClass()
+3.toggleClass() - will apply/delete existing applied class
+
+
+
+$("h1,p").css({"background-color":"red","color":"blue","font-size":"40px"});

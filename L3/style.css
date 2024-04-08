@@ -1,0 +1,62 @@
+* {
+  font-size: 12px;
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+#god {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+label[for="first-name"],
+[for="last-name"],
+[for="dobirth"],
+[for="address"],
+[for="phone-number"] {
+  display: block;
+  margin-top: 10px;
+}
+
+.container {
+  width: 45%;
+}
+
+.bgcolor {
+  background-color: aqua;
+}
+
+.bordertest {
+  border: 2px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
+}
+
+.container > button:nth-child(1) {
+  /* display: inline-block; */
+  margin-left: 125px;
+}
+
+#lbl {
+  display: flex;
+  justify-content: space-around;
+}
+
+#lbl > label {
+  font-size: 2rem;
+}

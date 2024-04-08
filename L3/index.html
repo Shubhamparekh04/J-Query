@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="god">
+      <div class="container">
+        <button id="tgl">Toggle</button>
+        <button id="sup">slideUp</button>
+        <button id="sdn">slideDown</button>
+        <button id="fout">fadeOut</button>
+        <button id="fin">fadeIn</button>
+        <h1>Election Candidate Registration Form</h1>
+        <form class="bordertest" action="./submitted.html">
+          <div>
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" />
+            <p></p>
+          </div>
+
+          <div>
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" />
+            <p></p>
+          </div>
+
+          <div>
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" />
+
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" />
+            </fieldset>
+          </div>
+
+          <div>
+            <label for="dobirth">Date of Birth*</label>
+            <input type="date" id="dobirth" />
+          </div>
+
+          <div>
+            <label for="address">Address*</label>
+            <input type="text" id="address" />
+            <p></p>
+          </div>
+
+          <div>
+            <label for="phone-number">Phone Number*</label>
+            <input type="tel" id="phone-number" />
+            <p></p>
+          </div>
+
+          <div>
+            <input type="checkbox" id="checkbox" />
+            <p id="error">
+              Kindly mark the check-box in order to proceed further
+            </p>
+            <p>
+              By checking this box, I agree to abide by the rules and
+              regulations set forth by the election committee. I understand that
+              any false information provided in this form may result in
+              disqualification from the election process. I also consent to the
+              collection and processing of my personal data for the purpose of
+              this election.
+            </p>
+          </div>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <video
+        controls
+        height="200px"
+        width="300px"
+        src="./TEST VIDEO.mp4"
+      ></video>
+    </div>
+
+    <div id="lbl">
+      <label id="lbl1">KeyCode is :</label>
+      <label id="lbl2">Key is :</label>
+    </div>
+    <script src="./jquery.js"></script>
+  </body>
+</html>
