@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./jquery-animated-headlines-master/jquery-animated-headlines-master/dist/css/jquery.animatedheadline.css"
+    />
+  </head>
+
+  <body>
+    <div class="selector">
+      <h1 class="ah-headline">
+        <span>My favorite food is</span>
+        <span class="ah-words-wrapper">
+          <b class="is-visible">pizza</b>
+          <b>sushi</b>
+          <b>steak</b>
+        </span>
+      </h1>
+    </div>
+    <script src="./jquery-animated-headlines-master/jquery-animated-headlines-master/src/js/jquery.animatedheadline.js"></script>
+
+    <script>
+      $(function () {
+        $(".selector").animatedHeadline({
+          animationType: "rotate-3",
+        });
+      });
+    </script>
+  </body>
+</html>

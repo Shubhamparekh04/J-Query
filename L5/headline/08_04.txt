@@ -1,0 +1,2 @@
+1. Headline plugin:- https://github.com/GeoffSelby/jquery-animated-headlines
+2. Pointer Plugin:- https://www.cssscript.com/circle-cursor-pointer/#google_vignette
