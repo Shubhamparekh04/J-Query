@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js" integrity="sha512-brrjTp9G6MkKX5QjXwwAQkscfFpKi3okjyZ/M3vGwwg9qI1msoz7z+EbQBLXsTnVK3POjYBGHcQvX34GFKr/7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+  <h1 id="counter">5800</h1>
+
+
+
+  <!-- <script src="./jquery.js"></script> -->
+  <!-- <script src="./jquery.easing.js"></script> -->
+  <script src="./counter.js"></script>
+
+  <script>
+    // JavaScript
+$("#counter").counter({
+  // autoStart: true,           // true/false, default: true
+  // duration: 6000,             // milliseconds, default: 1500
+  countFrom: 1,              // start counting at this number, default: 0
+  countTo: 30,                // count to this number, default: 0
+  // runOnce: true,              // only run the counter once, default: false
+  // placeholder: "?",           // replace the number with this before counting,
+  //                             // most useful with autoStart: false. default: undefined
+  // easing: "easeOutCubic",     // see http://gsgd.co.uk/sandbox/jquery/easing
+  //                             // for all available effects, see visual examples:
+  //                             // http://easings.net
+  //                             // default: "easeOutQuad"
+  // onStart: function() {},     // callback on start of the counting
+  // onComplete: function() {},  // callback on completion of the counting
+  // numberFormatter:            // function used to format the displayed numbers.
+  //   function(number) {
+  //     return " " + number;
+  //   }
+});
+  </script>
+</body>
+</html>
