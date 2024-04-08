@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+        p{
+            background-color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- <button>Click Me</button> -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum
+      porro, assumenda vitae officiis aperiam sapiente est? Consequuntur odio
+      accusantium distinctio inventore! Adipisci, fugiat sapiente debitis velit
+      accusantium distinctio inventore! Adipisci, fugiat sapiente debitis velit
+      accusantium distinctio inventore! Adipisci, fugiat sapiente debitis velit
+      accusantium distinctio inventore! Adipisci, fugiat sapiente debitis velit
+      nam eaque error!
+    </p>
+
+    <!-- always keep embedded jquery file at the end of body[after entire Document Object Model(DOM) is loaded] -->
+    <script src="./jquery-3.7.1.min.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script>
+      //   $("button").on("click",()=>{
+      //     $('p').toggle({duration:(1000)});
+      //   })
+
+    //   $(document).ready(function () {
+        // $("button").on("click", function () {
+        //     console.log("you hide it");
+        //   $("p").hide({ duration: 2000 });
+        // });
+
+        // $("button").on("dblclick", function () {
+        //   console.log("you double clicked");
+        //   $("p").hide({ duration: 1000 });
+        // });
+
+        // $("p").hide(1000, function () {
+        //   console.log("hidden");
+        // });
+
+        // $("p").show(1000, function () {});
+        // $("p").toggle({ duration: 1000 });
+    //   });
+
+
+    $(document).ready(function(){
+        $("p").click(function(){
+            $("p").css('background-color','green');
+        });
+
+        $("p").dblclick(function(){
+            $("p").css('background-color','orange');
+        });
+    });
+    </script>
+  </body>
+</html>
