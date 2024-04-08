@@ -1,0 +1,54 @@
+carousel effect slick / swiper:
+---------------
+
+ 1.cdn link
+
+2.local-css
+3.local-jquary
+
+4.slick-css
+5.slick-theme-css
+6.slick-js 
+-----------------
+
+3 & 6 should be at before body end
+----------------------------------------------
+
+
+1.https://plugins.jquery.com/slick > 2.https://github.com/kenwheeler/slick/  
+
+demo : https://kenwheeler.github.io/slick/
+------------------------------------
+https://swiperjs.com/get-started
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+particeljs download: https://vincentgarreau.com/
+unzip>drag in VS
+
+create app.js 
+create particle.jason > edit path
+
+
