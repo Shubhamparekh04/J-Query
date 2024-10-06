@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="box" style="background: lime; padding: 20px; border: 1px solid black; width: 300px;">
+        <h1>Box 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <br>
+    <div id="box2" style="background: pink; padding: 20px; border: 1px solid black; width: 300px;">
+        <h1>Box 2</h1>
+        <p>Lorem Lorem Lorem Lorem Lorem.</p>
+    </div>
+    <br>
+    <button id="replaceIt">Replace</button>
+    <button id="replaceItall">Replace All</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#replaceIt").click(function () {
+                $("#box2 > p").clone();
+                $("#box > p:eq(1)").replaceWith($("#box2 > p").clone());
+                // $("#box > p").replaceWith($("#box2 > p").clone());
+            });
+
+
+            $("#replaceItall").click(function () {
+                $("#box2 > p").clone();
+                $($("#box2 > p").clone()).replaceAll("#box p");
+                // $($("#box2").html().remove("h1")).replaceAll("#box p");
+
+            });
+        });
+    </script>
+</body>
+
+</html>

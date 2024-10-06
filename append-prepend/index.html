@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<h1>jQuery On method</h1>
+
+<div id="box" style=" width: 300px; padding: 10px; border: 5px solid black;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at tempore magnam nostrum aliquam cumque maxime
+    architecto dignissimos velit dolor sint ullam ea amet reiciendis porro, fugiat distinctio commodi error!
+</div>
+<br>
+
+<button id="appendBtn">Append</button>
+<button id="prependBtn">Prepend</button>
+<button id="afbfBtn">After/Before</button>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#appendBtn").click(function () {
+                $("#box").append("<h1 style= color:red; > Appended </h1 > ");
+            });
+
+            $("#prependBtn").click(function () {
+                $("#box").prepend("<h1 style= color:green; > Prepended </h1 > ");
+            });
+
+
+
+            $("#afbfBtn").on("click", function () {
+                $("#box").after("<p style=color:red>After</p>");
+                $("#box").before("<p style=color:blue>Before</p>");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

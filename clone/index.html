@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<h1>jQuery Clone() Method</h1>
+
+<div id="box" style="border: 1px solid black; background: greenyellow; padding: 20px; width: 300px;">
+    <h2>Hello Shubham</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam deleniti veritatis eaque saepe
+        doloremque hic, repellendus aspernatur accusamus at eos impedit perferendis exercitationem. Quae unde quas neque
+        provident aliquid.
+    </p>
+</div>
+
+<br>
+
+<div id="box2" style="border: 1px solid black; background: pink; padding: 20px; width: 300px;">
+    <p>
+        Quae unde quas neque provident aliquid.
+    </p>
+</div>
+
+<br>
+<button id="cloneIt" style="margin-left: 130px;">Clone</button>
+
+<body>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#cloneIt").click(function () {
+                $("#box2").empty();
+                $("#box > *").clone().appendTo("#box2");
+                // $("#box2").html($("#box").html());
+            });
+
+        });
+    </script>
+</body>
+
+</html>

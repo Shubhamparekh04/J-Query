@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 5/2.5;
+    border: 10px solid #000;
+    object-position: center;
+}
+
+.center{
+    width: 90%;
+    margin: auto;
+}
+
+.slick-track{
+    padding: 10px;
+}
